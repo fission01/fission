@@ -6,6 +6,7 @@
 </head>
 <body>
     <script>
+    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {WeixinJSBridge.call('hideOptionMenu');});
 	//document.title = '\u8bf7\u7a0d\u7b49...';
     function get_param(name,v) {
         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
